@@ -14,7 +14,7 @@
 const Response = require("./response"),
   Survey = require("./survey"),
   config = require("./config"),
-  i18n = require("../i18n.config");
+  i18n = require("../../i18n.config");
 
 module.exports = class Care {
   constructor(user, webhookEvent) {

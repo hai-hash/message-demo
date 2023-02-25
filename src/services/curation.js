@@ -13,7 +13,7 @@
 // Imports dependencies
 const Response = require("./response"),
   config = require("./config"),
-  i18n = require("../i18n.config");
+  i18n = require("../../i18n.config");
 
 module.exports = class Curation {
   constructor(user, webhookEvent) {

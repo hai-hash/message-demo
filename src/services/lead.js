@@ -14,7 +14,7 @@
 const Response = require("./response"),
   GraphApi = require("./graph-api"),
   config = require("./config"),
-  i18n = require("../i18n.config");
+  i18n = require("../../i18n.config");
 
 module.exports = class Lead {
   constructor(user, webhookEvent) {
