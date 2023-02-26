@@ -15,10 +15,10 @@ const express = require("express"),
   { urlencoded, json } = require("body-parser"),
   crypto = require("crypto"),
   path = require("path"),
-  Receive = require("./src/services/receive"),
-  GraphApi = require("./src/services/graph-api"),
-  User = require("./src/services/user"),
-  config = require("./src/services/config"),
+  Receive = require("./services/receive"),
+  GraphApi = require("./services/graph-api"),
+  User = require("./services/user"),
+  config = require("./services/config"),
   i18n = require("./i18n.config"),
   app = express();
 
@@ -42,7 +42,7 @@ app.set("view engine", "ejs");
 
 // Respond with index file when a GET request is made to the homepage
 app.get("/", function (_req, res) {
-  res.status(200).send("SERVER RUNNING");
+  res.render("index");
 });
 
 // Add support for GET requests to our webhook

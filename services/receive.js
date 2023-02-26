@@ -17,7 +17,7 @@ const Curation = require("./curation"),
   Care = require("./care"),
   Survey = require("./survey"),
   GraphApi = require("./graph-api"),
-  i18n = require("../../i18n.config"),
+  i18n = require("../i18n.config"),
   config = require("./config");
 
 module.exports = class Receive {

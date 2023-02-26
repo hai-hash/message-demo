@@ -12,7 +12,7 @@
 
 // Imports dependencies
 const Response = require("./response"),
-  i18n = require("../../i18n.config");
+  i18n = require("../i18n.config");
 
 module.exports = class Survey {
   static genAgentRating(agent) {
